@@ -15,7 +15,7 @@ const Testimonials_box = ({id}) => {
   var name = (id==0) ? 'Colton Smith' : (id==1) ? 'Irene Roberts' : 'Anne Wallace';
 
   return (
-    <div className={`${place_self} flex flex-col gap-testimonials__item d:gap-testimonials__item--d bg-veryDarkMagenta w-100 d:w-testimonials__item--d px-testimonials__item_X pt-testimonials__item_T pb-testimonials__item_B d:pb-testimonials__item_B--d rounded-testimonials__item`}>
+    <article className={`${place_self} flex flex-col gap-testimonials__item d:gap-testimonials__item--d bg-veryDarkMagenta w-100 d:w-testimonials__item--d px-testimonials__item_X pt-testimonials__item_T pb-testimonials__item_B d:pb-testimonials__item_B--d rounded-testimonials__item`}>
       <div className="flex flex-row flex-wrap gap-testimonials__user d:gap-testimonials__user--d">
         <div>
           <img className="rounded-full w-testimonials__img h-testimonials__img" src={image}/>
@@ -26,9 +26,9 @@ const Testimonials_box = ({id}) => {
         </div>
       </div>
       <p className="font-medium text-testimonials__desc d:text-desc2--d leading-testimonials__desc tracking-testimonials__desc text-lightGrayishMagenta">
-        {desc}        
+        {desc}
       </p>
-    </div>
+    </article>
   )
 }
 

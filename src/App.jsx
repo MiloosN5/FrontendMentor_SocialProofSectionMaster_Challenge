@@ -6,13 +6,13 @@ import Testimonials from './components/testimonials/Testimonials'
 function App() {
 
   return (
-    <>
-      <div className="flex flex-row justify-between flex-wrap wrapper d:w-wrapper d:mx-auto">
+    <main>
+      <section className="flex flex-row justify-between flex-wrap wrapper d:w-wrapper d:mx-auto">
         <Header />
         <Rating />
         <Testimonials />
-      </div>
-    </>
+      </section>
+    </main>
   )
 }
 
