@@ -50,7 +50,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ### What I learned
 
-* React
+* **React**<br>
     Learn to split the code into the reusable components. This example is made of the three main parts - header, rating & testimonials. Given that, we can make three different components that later will be joined in the 'App.jsx'. Within the rating & testimonials sections, we have templates that repeat. This leads us to dissect our 'rating' & 'testimonials' components into two components - main one (wrapper) & box template. Nonetheless, in 'rating' section we have multiple 'svg' stars. In order to not repeat them, the star can be also separate component that then will be added multiple times to the parent component using array loop.
     
     * App.jsx
@@ -100,9 +100,9 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
         }            
       ```
 
-* Tailwindcss
+* **Tailwindcss**<br>
     This is a utility-first CSS framework with pre-defined classes. Along with big assortment of different classes, we can also make our own custom classes. These custom classes are added as a theme.extend in the 'tailwind.config.js' file. In the extend object, we can set our version (value) of the certain property. It is useful due its reusability. If we want custom property to only appears one, we don't need to added it in this file, we can use something called 'arbitrary values'. These values can be added directly in the HTML/JSX as a extend of the certain property.
-    * **Differ between instances of the same component**
+    * **Differ between instances of the same component**<br>
         As we can see in this challenge, despite having some common templates (for rating & testimonials), there are also differ between them. This differ is express through different info (e.g. text & image). In that case, we can use 'props' to send values from parent (e.g. rating) to the child (rating_box). Then, in the child component, we need to distinguish instances (cases). It can be done using e.g. "id" prop.<br>
         **Note** Be careful here, because we need 'id' not 'key' prop to send to the child, because 'key' is one of the props that can't be forwarded to the child component. Still, we need 'key' as React require that each element of the collection needs to have unique key. Using a ternary operator, we can determine which values will be assign to which instance. Eventually, this value can be added to the element using javascript expression "{}".
 
@@ -125,7 +125,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
                 }
             ```      
         
-* place-self
+* **place-self** <br>
     In both 'rating' & 'testimonials' sections, there are layout which items are not aligned. Each item is aligned differently - one at the start, the following one is in the center and the final one is at the end. In CSS, there is property called 'place-self'. It is shorthand for 'justify-self' & 'align-self'. That means that it aligns the item in the both block and inline directions.
 
 ### Continued development
@@ -154,15 +154,15 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 React
 - create new vite application (with React)
-    * npm create vite@latest 
+    * ``` npm create vite@latest```
 - install needed packages
-    * npm install
+    * ``` npm install```
 - serve app on the localhost (see package.json)
-    * npm run dev
+    * ``` npm run dev```
 - build (predeploy) app for the production - create dist folder (see package.json)
-    * npm run build
+    * ``` npm run build```
 - deploy app to the GitHub Pages (see package.json)
-    * gh-pages -d dist
+    * ``` gh-pages -d dist```
 
 ## Author
 
