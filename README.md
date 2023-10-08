@@ -25,8 +25,8 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ### Screenshot
 <div>
-  <img src="solution_images/solution_375mobile.jpg" width="auto" height="400" src="solution on mobile view"/>
-  <img src="solution_images/solution_1440desktop.jpg" width="auto" height="400" src="solution on desktop view"/>
+  <img src="solution_images/solution_375mobile.png" width="auto" height="400" src="solution on mobile view"/>
+  <img src="solution_images/solution_1440desktop.png" width="auto" height="400" src="solution on desktop view"/>
 </div>
 
 ### Links
